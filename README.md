@@ -1,9 +1,6 @@
 # react_portfolio
 responsive portfolio using react js and tailwind css
 
-live preview : https://DevAbdulsalamPortfolio.netlify.app/
-
-1.npm i
-2.npm run dev
+live preview : https://devabdulsalam1.netlify.app/
 
 mail: ammuftau74@gmail.com
