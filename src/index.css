@@ -32,3 +32,10 @@ textarea {
 ::selection {
   @apply bg-cyan-600;
 }
+
+.debug{
+  border: 1px red solid;
+}
+.debugg{
+  border: 1px green solid;
+}

@@ -13,25 +13,25 @@ const Skills = () => {
       count: 70,
     },
     {
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
+      logo: "logo-javascript",
+      level: "Intermediate",
+      count: 50,
     },
     {
       logo: "logo-react",
       level: "Intermediate",
-      count: 30,
-    },
-    {
-      logo: "logo-nodejs",
-      level: "Beginner",
       count: 40,
     },
     {
-      logo: "logo-react",
+      logo: "logo-github",
       level: "Intermediate",
-      count: 30,
+      count: 60,
     },
+    {
+      logo: "logo-google",
+      level: "Advance",
+      count: 80,
+    }
   ];
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
@@ -40,13 +40,15 @@ const Skills = () => {
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
-        <div className="flex items-center justify-center mt-12 gap-10 md:flex-wrap">
+        <div className="flex items-center justify-center mt-12 gap-10 basic-2/6 md:flex-wrap">
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              className="group "
+              // border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
             >
               <div
+                key={i}
                 style={{
                   background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
                 }}

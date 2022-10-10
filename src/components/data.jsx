@@ -238,9 +238,9 @@ export const testimonials = [
   {
     authorImg: TestiImage2,
     authorText:
-      'high performance. We can’t imagine working without it.',
+      'high performance. We can’t imagine working without him.',
     authorName: 'Prince Achuja',
-    authorPosition: 'Head of Design, StemLab, Kano',
+    authorPosition: 'Head of Product, StemLab, Kano',
   },
   {
     authorImg: TestiImage3,

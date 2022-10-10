@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
-// import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonials";
 // import BackTopBtn from "./components/BackTopBtn";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -18,10 +18,10 @@ const App = () => {
       <Bot />
       <Hero />
       <About />
+      <Project />
+      <Testimonials />
       <Skills />
       <Hireme />
-      <Project />
-      {/* <Testimonials /> */}
       <Contact />
       {/* <BackTopBtn /> */}
       <Footer />

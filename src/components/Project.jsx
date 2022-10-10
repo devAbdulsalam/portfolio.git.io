@@ -5,7 +5,7 @@ import project2 from "../assets/images/project-2.jpg";
 import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-4.jpg";
 import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
+import project_person from "../assets/images/project_person.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -15,6 +15,7 @@ const Project = () => {
     {
       img: project1,
       name: "Movie App",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
       github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://myreactflix.netlify.app",
       techStack: ["tailwindcss", "react"]
@@ -22,18 +23,21 @@ const Project = () => {
     {
       img: project2,
       name: "Job search Web App",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
       github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
       live_link: "https://myjobsearch.netlify.app",
     },
     {
       img: project3,
       name: "Highking",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
       github_link: "https://github.com/Sridhar-C-25/highking",
       live_link: "https://highking01.netlify.app",
     },
     {
       img: project4,
       name: "React Nav",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
       github_link:
         "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
       live_link: "https://reacttailwindnavbar.netlify.app",
@@ -41,6 +45,7 @@ const Project = () => {
     {
       img: project5,
       name: "Vue Country",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
       github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://vuecountry05.netlify.app",
     },
@@ -51,7 +56,7 @@ const Project = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
+        <p className="text-gray-400 mt-3 text-lg">Check out some of my Awesome projects</p>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
@@ -77,7 +82,8 @@ const Project = () => {
               <SwiperSlide key={i}>
                 <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
                   <img src={project_info.img} alt="" className="rounded-lg" />
-                  <h3 className="text-xl my-4">{project_info.name}</h3>
+                  <h3 className="text-xl m-1">{project_info.name}</h3>
+                  <p className="mb-3">{project_info.desc}</p>
                   <div className="flex gap-3">
                     <a
                       href={project_info.github_link}
@@ -100,7 +106,9 @@ const Project = () => {
           </Swiper>
         </div>
         <div className="lg:block hidden">
-          <img src={project_person} alt="" />
+          <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
+            <img src={project_person} alt="" className="w-8/12 mx-auto object-contain" />
+          </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/hero.svg";
 const Hero = () => {
   const social_media = [
     { name: "logo-instagram", link: "#home" },
@@ -13,7 +13,7 @@ const Hero = () => {
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
       <div className="flex-1 md:flex items-center justify-center h-full hidden">
-        <img src={hero} alt="" className="md:w-11/12 h-full object-cover" />
+          <img src={hero} alt="" className="md:w-9/12   object-cover" />
       </div>
       <div className="flex-1 md:hidden flex items-center justify-center mt-24 h-full">
           <div className=" flex flex-col justify-center">
