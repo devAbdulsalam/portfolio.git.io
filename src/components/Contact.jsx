@@ -15,7 +15,7 @@ const Contact = () => {
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-cyan-600">Me</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">Get in touch</p>
+        <p className="text-gray-400 mt-3 text-lg">Have a project in mind? <br/> Feel free to share it!</p>
         <div className="mt-16 flex flex-col-reverse md:flex-row space-y-10 gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto">
           <form className="flex flex-col flex-1 gap-5" name="PortfolioForm" action="https://formspree.io/f/xeqdgwke" method="POST">
             <input type="text" name="name" placeholder="Your Name" />
