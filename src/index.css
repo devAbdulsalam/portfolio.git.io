@@ -20,6 +20,9 @@ body {
 .swiper-pagination-bullet {
   @apply bg-white;
 }
+.skillIcon {
+  @apply text-green-500;
+}
 
 input,
 textarea {
@@ -32,10 +35,35 @@ textarea {
 ::selection {
   @apply bg-cyan-600;
 }
+.services{
+  transition: transform 0.5s;
+}
+.services i {
+  color: #d5d5d5;
+  text-align: center;
+}
+.services::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  background-color: #00bcd4;
+  width: 0;
+  height: 3px;
+  transition: 0.5s;
+  left: 50%;
+  transform: translate(-50%);
+}
+.services:hover {
+  transform: translateY(-15px);
+}
 
-.debug{
+.services:hover::before {
+  width: 100%;
+}
+.debug {
   border: 1px red solid;
 }
-.debugg{
+
+.debugg {
   border: 1px green solid;
 }

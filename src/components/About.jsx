@@ -7,7 +7,7 @@ const About = () => {
     { text: "Companies Work", count: "07" },
   ];
   return (
-    <section id="about" className="py-10 text-white">
+    <section id="about" className="py-10 text-white debug">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           About <span className="text-cyan-600">Me</span>
@@ -16,7 +16,7 @@ const About = () => {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3">
-              <p className="text-justify leading-7 w-11/12 mx-auto">
+              <p className="text-justify leading-7 text-xl md:w-11/12 mx-auto">
                 I am a creative front-End Developer with over two years of experience providing 
                 developing and reponsive web applications for clients.
               <br/> My goal is to continue to build methods and website to optimize service delivery 

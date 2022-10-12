@@ -1,51 +1,20 @@
 import React from "react";
+// import skills data
+import { skills } from '../data';
 
 const Skills = () => {
-  const skills = [
-    {
-      logo: "logo-html5",
-      level: "Advance",
-      count: 80,
-    },
-    {
-      logo: "logo-css3",
-      level: "Expect",
-      count: 70,
-    },
-    {
-      logo: "logo-javascript",
-      level: "Intermediate",
-      count: 50,
-    },
-    {
-      logo: "logo-react",
-      level: "Intermediate",
-      count: 40,
-    },
-    {
-      logo: "logo-github",
-      level: "Intermediate",
-      count: 60,
-    },
-    {
-      logo: "logo-google",
-      level: "Advance",
-      count: 80,
-    }
-  ];
   return (
-    <section id="skills" className="py-10 bg-gray-800 relative">
+    <section id="skills" className="py-14 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
-        <div className="flex items-center justify-center mt-12 gap-10 basic-2/6 md:flex-wrap">
+        <div className="flex items-center justify-center mt-12 gap-5 flex-wrap">
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="group "
-              // border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
+              className="group  max-w-[10rem] basis-2/6 md:basis-1/6 text-center flex flex-col justify-center items-center"
             >
               <div
                 key={i}
@@ -54,11 +23,10 @@ const Skills = () => {
                 }}
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
-                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                <div className={`text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600`}>
+                  <ion-icon name={skill.logo} style={{color:`${skill.color}`}}></ion-icon>
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
             </div>
           ))}
         </div>

@@ -1,14 +1,6 @@
 import React from "react";
-
+import {contact_info} from  "../data"
 const Contact = () => {
-  const contact_info = [
-    { logo: "mail", text: "devabdulsalam74@gmail.com" },
-    { logo: "logo-whatsapp", text: "903 509 5173", link: "https://wa.me/+09035095173"},
-    {
-      logo: "location",
-      text: "Kano, Nigeria",
-    },
-  ];
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">

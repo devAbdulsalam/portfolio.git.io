@@ -20,12 +20,12 @@
 // import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // // projects images
-// import Project1 from './assets/img/projects/p1.webp';
-// import Project2 from './assets/img/projects/p2.webp';
-// import Project3 from './assets/img/projects/p3.webp';
-// import Project4 from './assets/img/projects/p4.webp';
-// import Project5 from './assets/img/projects/p5.webp';
-// import Project6 from './assets/img/projects/p6.webp';
+import { HttpProxy } from "vite";
+import project1 from "./assets/images/project-1.png";
+import project2 from "./assets/images/project-2.jpg";
+import project3 from "./assets/images/project-3.jpg";
+import project4 from "./assets/images/project-4.jpg";
+import project5 from "./assets/images/project-5.png";
 
 // // skills images
 // import SkillImg1 from './assets/img/skills/html5.png';
@@ -115,44 +115,61 @@ import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
 // ];
 
 // // projects
-// export const projectsData = [
-//   {
-//     id: '1',
-//     image: Project1,
-//     name: 'project name 1',
-//     category: 'UI/UX design',
-//   },
-//   {
-//     id: '2',
-//     image: Project2,
-//     name: 'project name 2',
-//     category: 'web development',
-//   },
-//   {
-//     id: '3',
-//     image: Project3,
-//     name: 'project name 3',
-//     category: 'UI/UX design',
-//   },
-//   {
-//     id: '4',
-//     image: Project4,
-//     name: 'project name 4',
-//     category: 'branding',
-//   },
-//   {
-//     id: '5',
-//     image: Project5,
-//     name: 'project name 5',
-//     category: 'web development',
-//   },
-//   {
-//     id: '6',
-//     image: Project6,
-//     name: 'project name 6',
-//     category: 'web development',
-//   },
-// ];
+export const projects = [
+    {
+      img: project1,
+      name: "Movie App",
+      desc: "watch on demand moveies at the confort of your home",
+      github_link: "https://github.com/Sridhar-C-25",
+      live_link: "https://myreactflix.netlify.app",
+      techStack: ["tailwindcss", "react"]
+    },
+    {
+      img: project2,
+      name: "Job search Web App",
+      desc: "A solution that helps job seeks and recruiter without hassle",
+      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
+      live_link: "https://myjobsearch.netlify.app",
+    },
+    {
+      img: project3,
+      name: "Momentum",
+      desc: "Live display of weather, time, date and enrich Qoute to brighten your Day",
+      github_link: "https://github.com/Sridhar-C-25/highking",
+      live_link: "https://dmomentum.netlify.app",
+    },
+    {
+      img: project4,
+      name: "BreakFast Resturant",
+      desc: "This solution is a platform that allows people order African dishes anywhere, anytime",
+      github_link:
+        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+      live_link: "https://reacttailwindnavbar.netlify.app",
+    },
+    {
+      img: project4,
+      name: "Queens Collections",
+      desc: "This solution is a E-commerce clothing website",
+      github_link:
+        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+      live_link: "https://reacttailwindnavbar.netlify.app",
+    },
+    {
+      img: project4,
+      name: "Fitness",
+      desc: "This solution is a E-commerce clothing website that sell sport kits, and gears",
+      github_link:
+        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+      live_link: "https://sport-center.netlify.app",
+    },
+    {
+      img: project5,
+      name: "Vue Country",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
+      github_link: "https://github.com/Sridhar-C-25",
+      live_link: "https://vuecountry05.netlify.app",
+    },
+  ];
 
 // // projects
 // export const projectsNav = [
@@ -171,60 +188,72 @@ import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
 // ];
 
 // // skill
-// export const skills = [
-//   {
-//     image: SkillImg1,
-//   },
-//   {
-//     image: SkillImg2,
-//   },
-//   {
-//     image: SkillImg3,
-//   },
-//   {
-//     image: SkillImg4,
-//   },
-//   {
-//     image: SkillImg5,
-//   },
-//   {
-//     image: SkillImg6,
-//   },
-//   {
-//     image: SkillImg7,
-//   },
-//   {
-//     image: SkillImg8,
-//   },
-// ];
+export  const skills = [
+    {
+      logo: "logo-html5",
+      color: "#e65100",
+      bg: "white",
+      count: 80,
+    },
+    {
+      logo: "logo-css3",
+      color: "#1565c0",
+      bg: "white",
+      count: 70,
+    },
+    {
+      logo: "logo-javascript",
+      color: "#ff9800",
+      bg: "",
+      count: 60,
+    },
+    {
+      logo: "logo-react",
+      color: "#26c6da",
+      bg: "white",
+      count: 50,
+    },
+    {
+      logo: "logo-github",
+      color: "white",
+      bg: "",
+      count: 60,
+    },
+    {
+      logo: "logo-google",
+      color: "white",
+      bg: "white",
+      count: 80,
+    }
+  ];
 
-// // services
-// export const services = [
-//   {
-//     icon: <FiLayout />,
-//     name: 'Web Design',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//   },
-//   {
-//     icon: <FiSettings />,
-//     name: 'Web Development',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//   },
-//   {
-//     icon: <FiPenTool />,
-//     name: 'Branding',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//   },
-//   {
-//     icon: <FiTag />,
-//     name: 'SEO',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//   },
-// ];
+// services
+export const services = [
+  {
+    icon: 'fa-laptop-code',
+    name: 'Web Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+  },
+  {
+    icon: 'fa-tools',
+    name: 'Web Maintanance',
+    description:
+      'SEO ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+  },
+  {
+    icon: 'fa-database',
+    name: 'Resaerch/Data Analysis',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+  },
+  {
+    icon: 'fa-people-roof',
+    name: 'Human Resource Management',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+  },
+];
 
 // testimonials
 export const testimonials = [
@@ -257,18 +286,12 @@ export const testimonials = [
   },
 ];
 
-// contact
-// export const contact = [
-//   {
-//     icon: <FiMail />,
-//     title: 'Have a question?',
-//     subtitle: 'I am here to help you.',
-//     description: 'Email me at hello@youremail.com',
-//   },
-//   {
-//     icon: <FiMapPin />,
-//     title: 'Current Location',
-//     subtitle: 'Bucharest, Romania',
-//     description: 'Serving clients worldwide',
-//   },
-// ];
+// contact_info
+export const contact_info = [
+    { logo: "mail", text: "devabdulsalam74@gmail.com", link:"https:mailto/ammuftau74@gmail.com"},
+    { logo: "logo-whatsapp", text: "+234 903 509 5173", link: "https://wa.me/+09035095173"},
+    {
+      logo: "location",
+      text: "Kano, Nigeria",
+    },
+  ];
