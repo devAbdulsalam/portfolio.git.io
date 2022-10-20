@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
-import Hireme from "./components/Hireme";
+import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 // import BackTopBtn from "./components/BackTopBtn";
@@ -21,7 +21,7 @@ const App = () => {
       <Project />
       <Testimonials />
       <Skills />
-      <Hireme />
+      <Services/>
       <Contact />
       {/* <BackTopBtn /> */}
       <Footer />

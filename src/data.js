@@ -20,10 +20,19 @@
 // import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
 
 // // projects images
+<<<<<<< HEAD
 import project1 from "./assets/images/project-1.png";
 import project2 from "./assets/images/project-2.jpeg";
 import project3 from "./assets/images/project-3.jpg";
 import project4 from "./assets/images/project-4.jpg";
+=======
+import { HttpProxy } from "vite";
+import project1 from "./assets/images/project-1.png";
+import project2 from "./assets/images/project-2.jpg";
+import project3 from "./assets/images/project-3.jpg";
+import project4 from "./assets/images/project-4.jpg";
+import project5 from "./assets/images/project-5.png";
+>>>>>>> 6c98f88016539f3a6fae9e723cf51e4d56479edb
 
 // // skills images
 // import SkillImg1 from './assets/img/skills/html5.png';
@@ -116,6 +125,7 @@ import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
 export const projects = [
     {
       img: project1,
+<<<<<<< HEAD
       name: "Phone book",
       desc: "A contact book where user can save contact, edit contact, make call to phone numbers",
       github_link: "https://github.com/devAbdulsalam/phone-book-with-react.git",
@@ -148,6 +158,10 @@ export const projects = [
       img: project1,
       name: "Movie App",
       desc: "Watch on demand moveies at the confort of your home",
+=======
+      name: "Movie App",
+      desc: "watch on demand moveies at the confort of your home",
+>>>>>>> 6c98f88016539f3a6fae9e723cf51e4d56479edb
       github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://myreactflix.netlify.app",
       techStack: ["tailwindcss", "react"]
@@ -160,13 +174,52 @@ export const projects = [
       live_link: "https://myjobsearch.netlify.app",
     },
     {
+<<<<<<< HEAD
+=======
+      img: project3,
+      name: "Momentum",
+      desc: "Live display of weather, time, date and enrich Qoute to brighten your Day",
+      github_link: "https://github.com/Sridhar-C-25/highking",
+      live_link: "https://dmomentum.netlify.app",
+    },
+    {
+      img: project4,
+      name: "BreakFast Resturant",
+      desc: "This solution is a platform that allows people order African dishes anywhere, anytime",
+      github_link:
+        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+      live_link: "https://reacttailwindnavbar.netlify.app",
+    },
+    {
+      img: project4,
+      name: "Queens Collections",
+      desc: "This solution is a E-commerce clothing website",
+      github_link:
+        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+      live_link: "https://reacttailwindnavbar.netlify.app",
+    },
+    {
+>>>>>>> 6c98f88016539f3a6fae9e723cf51e4d56479edb
       img: project4,
       name: "Fitness",
       desc: "This solution is a E-commerce clothing website that sell sport kits, and gears",
       github_link:
+<<<<<<< HEAD
         "https://github.com/devAbdulsalam/fitness.git",
       live_link: "https://sport-center.netlify.app",
     }
+=======
+        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+      live_link: "https://sport-center.netlify.app",
+    },
+    {
+      img: project5,
+      name: "Vue Country",
+      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
+      github_link: "https://github.com/Sridhar-C-25",
+      live_link: "https://vuecountry05.netlify.app",
+    },
+>>>>>>> 6c98f88016539f3a6fae9e723cf51e4d56479edb
   ];
 
 // // projects

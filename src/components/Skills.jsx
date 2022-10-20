@@ -10,11 +10,19 @@ const Skills = () => {
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My knowledge</p>
+<<<<<<< HEAD
         <div className="flex items-center justify-center mt-12 gap-5 space-y-3 flex-wrap">
           {skills?.map((skill, i) => (
             <div
               key={i}
               className="group max-w-[10rem] basis-1/6 text-center flex flex-col justify-center items-center"
+=======
+        <div className="flex items-center justify-center mt-12 gap-5 flex-wrap">
+          {skills?.map((skill, i) => (
+            <div
+              key={i}
+              className="group  max-w-[10rem] basis-2/6 md:basis-1/6 text-center flex flex-col justify-center items-center"
+>>>>>>> 6c98f88016539f3a6fae9e723cf51e4d56479edb
             >
               <div
                 key={i}
