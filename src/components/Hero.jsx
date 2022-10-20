@@ -43,9 +43,9 @@ const Hero = () => {
           </h1>
           <button className="btn-primary mt-8 hover:bg-cyan-400 transition-all" href="/#contact">Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
+            {social_media?.map((icon, i) => (
               <div
-                key={icon}
+                key={i}
                 className="text-gray-600 hover:text-white cursor-pointer "
               >
                 <ion-icon name={icon.name} href={icon.link}></ion-icon>

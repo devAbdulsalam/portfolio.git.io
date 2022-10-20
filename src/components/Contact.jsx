@@ -1,14 +1,6 @@
 import React from "react";
-
+import {contact_info} from  "../data"
 const Contact = () => {
-  const contact_info = [
-    { logo: "mail", text: "devabdulsalam74@gmail.com" },
-    { logo: "logo-whatsapp", text: "903 509 5173", link: "https://wa.me/+09035095173"},
-    {
-      logo: "location",
-      text: "Kano, Nigeria",
-    },
-  ];
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
@@ -28,13 +20,13 @@ const Contact = () => {
               <div
                 key={i}
                 className="flex flex-row  
-                  text-left gap-4 flex-wrap items-center"
+                  text-left gap-4 flex-wrap m-2 items-center"
               >
                 <div className="min-w-[3.5rem]  text-3xl min-h-[3.5rem] cursor-pointer flex items-center justify-center text-white bg-cyan-600 rounded-full"
                 href={contact.link} target="_blank">
                   <ion-icon name={contact.logo}></ion-icon>
                 </div>
-                <p className="md:text-base text-sm  break-words">
+                <p className="md:text-base text-sm m-1 break-words">
                   {contact.text}
                 </p>
               </div>

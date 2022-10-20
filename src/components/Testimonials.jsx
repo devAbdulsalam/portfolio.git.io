@@ -7,7 +7,7 @@ const Testimonials = () => {
 
   return (
     <section id='testimonials' className='section bg-secondary'>
-      <div className='container mx-auto'>
+      <div className="container mx-auto mt-8">
         
         <div className='flex flex-col items-center text-center'>
           <div className="text-center">

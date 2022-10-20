@@ -1,68 +1,26 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.jpg";
-import project3 from "../assets/images/project-3.jpg";
-import project4 from "../assets/images/project-4.jpg";
-import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
+import {projects} from "../data"
+// import {ScrollAnimation} from 'react-animate-on-scroll';
+// import "animate.css/animate.min.css"
 
 const Project = () => {
-  const projects = [
-    {
-      img: project1,
-      name: "Movie App",
-      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
-      techStack: ["tailwindcss", "react"]
-    },
-    {
-      img: project2,
-      name: "Job search Web App",
-      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
-    },
-    {
-      img: project3,
-      name: "Highking",
-      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
-    },
-    {
-      img: project4,
-      name: "React Nav",
-      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
-      github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
-    },
-    {
-      img: project5,
-      name: "Vue Country",
-      desc: "lorem gdfgjdfgldfg;lfg;l kjpjpojo[j[l ijpojp",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
-    },
-  ];
   return (
     <section id="projects" className="py-10 text-white">
-      <div className="text-center">
+      <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Projects</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">Check out some of my Awesome projects</p>
       </div>
-      <br />
-      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
+      <div className="flex w-11/12 gap-6 px-5 mx-auto mt-6 items-center relative">
+        {/* <ScrollAnimation animateIn="fadeIn" > */}
         <div className="lg:w-2/3 w-full">
           <Swiper
-            slidesPerview={1.2}
+            slidesPerView={1.2}
             spaceBetween={20}
             breakpoints={{
               768: {
@@ -105,9 +63,21 @@ const Project = () => {
             ))}
           </Swiper>
         </div>
-        <div className="lg:block hidden">
+        {/* </ScrollAnimation> */}
+        <div className="lg:block hidden text-center p-3 bg-slate-700 rounded-xl ml-3">
           <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
-            <img src={project_person} alt="" className="w-8/12 mx-auto object-contain" />
+            {/* <img src={project_person} alt="" className="w-8/12 mx-auto object-contain" /> */}
+            <div>
+              <h2 className="text-2xl font-semibold">
+                Have a project in mind? <br/> Feel free to share it!
+              </h2>
+              <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-7">
+                I'm a full Time web developer. lets turn that your amazing idea into reality
+                soluta quos tempore eos accusamus cupiditate, amet in similique
+                Consequatur a quidem maiores!
+              </p>
+              <button className="btn-primary mt-10 hover:bg-cyan-400 transition-all">Let's chat</button>
+            </div>
           </div>
         </div>
       </div>

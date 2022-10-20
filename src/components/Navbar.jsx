@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full left-0 top-0 z-[999] ${
-        sticky ? "bg-gray-900/60  text-white" : "text-white"
+        sticky ? "bg-gray-900  text-white" : "text-white"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -36,6 +36,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-1 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
               <li key={i} className={`px-6 ${ sticky ? "text-white" : "text-cyan-800"} hover:text-cyan-600`}>
+                
                 <a href={menu?.link}>{menu?.name}</a>
               </li>
             ))}
